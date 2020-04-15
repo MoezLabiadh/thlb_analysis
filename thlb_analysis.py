@@ -16,20 +16,20 @@ spatialRef = arcpy.SpatialReference(3005)
 
 #Create variables for input layers
 
-BCGWcon = r'Database Connections\BCGW.sde'
+BCGWcon = r'Database Connections\....sde'
 VRI = os.path.join (BCGWcon, "WHSE_FOREST_VEGETATION.VEG_COMP_LYR_R1_POLY")
 OGMA = os.path.join (BCGWcon, "WHSE_LAND_USE_PLANNING.RMP_OGMA_LEGAL_ALL_SVW")
 Licensees = os.path.join (BCGWcon, "REG_LAND_AND_NATURAL_RESOURCE.FOREST_LICENSEE_OPER_SP")
 
-##VRI = r'\\bctsdata.bcgov\data\tko_root\GIS_WORKSPACE\MLABIADH\PyMe\thlb_analysis\data\thlb_analysis.gdb\test\vri_tko'
-##OGMA = r'\\bctsdata.bcgov\data\tko_root\GIS_WORKSPACE\MLABIADH\PyMe\thlb_analysis\data\thlb_analysis.gdb\test\OGMA_tko'
-##Licensees = r'\\bctsdata.bcgov\data\tko_root\GIS_WORKSPACE\MLABIADH\PyMe\thlb_analysis\data\thlb_analysis.gdb\test\licensees_tko'
+##VRI = r'\\...\thlb_analysis.gdb\test\vri_tko'
+##OGMA = r'\\...\thlb_analysis\data\thlb_analysis.gdb\test\OGMA_tko'
+##Licensees = r'\\....\thlb_analysis.gdb\test\licensees_tko'
 
-THLB = r'\\spatialfiles2.bcgov\archive\FOR\VIC\HTS\FAIB_DATA_FOR_DISTRIBUTION\THLB\Consolidated_THLB.gdb\SIR\THLB_data_SIR'
-BEC_HLP = r'\\bctsdata.bcgov\data\tko_root\GIS_WORKSPACE\Tools\DrilldownTKO\Supporting Data\AdditionalDatasetsTKO.gdb\BEC_HLP_FTBO'
+THLB = r'\\...\SIR\THLB_data_SIR'
+BEC_HLP = r'\\...\AdditionalDatasetsTKO.gdb\BEC_HLP_FTBO'
 
-WorkGDB = r'\\bctsdata.bcgov\data\tko_root\GIS_WORKSPACE\MLABIADH\PyMe\thlb_analysis\data\thlb_analysis.gdb'
-AOI = r'\\bctsdata.bcgov\data\tko_root\GIS_WORKSPACE\MLABIADH\PyMe\thlb_analysis\data\thlb_analysis.gdb\Boundary_TSA' # this layer will be specified by the user
+WorkGDB = r'\\....\data\thlb_analysis.gdb'
+AOI = r'\\...\data\thlb_analysis.gdb\Boundary_TSA' # this layer will be specified by the user
 
 #Clip the input layers to the AOI extent
 
